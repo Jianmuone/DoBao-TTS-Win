@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   dob ao-tts:
-    image: ghcr.io/YOUR_USERNAME/dobao-tts:latest
+    image: ghcr.io/orangewoker/dobao-tts:latest
     container_name: dob ao-tts
     ports:
       - "3000:3000"

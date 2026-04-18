@@ -51,6 +51,23 @@ jobs:
             type=semver,pattern={{major}}
             type=sha,prefix=
 
+      - name: Set Package Visibility to Public
+        uses: actions/github-script@v7
+        if: github.event_name != 'pull_request'
+        with:
+          script: |
+            try {
+              await github.rest.packages.setPackageVisibility({
+                package_type: 'container',
+                package_name: 'dobao-tts',
+                owner: context.repo.owner,
+                visibility: 'public'
+              });
+              console.log('Package visibility set to public');
+            } catch (error) {
+              console.log('Package visibility setting:', error.message);
+            }
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
