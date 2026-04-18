@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-04-13T15:22:20.922Z",
+  "protectionLevel": "enhanced",
+  "statistics": {
+    "js": {
+      "total": 8,
+      "success": 8,
+      "originalSize": 332778,
+      "protectedSize": 563106
+    },
+    "html": {
+      "total": 6,
+      "success": 6,
+      "originalSize": 282318,
+      "protectedSize": 133972
+    },
+    "css": {
+      "total": 8,
+      "success": 8,
+      "originalSize": 171072,
+      "protectedSize": 125101
+    },
+    "startTime": 1776093738163
+  },
+  "features": [
+    "High-strength JavaScript obfuscation",
+    "Control flow flattening",
+    "Dead code injection",
+    "String array encryption (RC4 + Base64)",
+    "Self-defending code",
+    "Anti-debugging protection",
+    "HTML/CSS minification",
+    "File integrity verification"
+  ],
+  "warnings": [
+    "Obfuscated code is significantly larger than original",
+    "Debug protection may affect legitimate debugging",
+    "Some features may impact runtime performance"
+  ]
+}
